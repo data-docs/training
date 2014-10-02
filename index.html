@@ -14,11 +14,6 @@
     <script src="js/thirdparty/jquery.ui.core.js"></script>
     <script src="js/thirdparty/jquery.ui.widget.js"></script>
     <script src="js/thirdparty/jquery.ui.accordion.js"></script>
-    
-    
-    
-   
-
 </head>
 
 <body>
@@ -36,7 +31,12 @@
     <div class="datadocs-main-canvas-800">
         <!-- About Section -->
         <div id="what">
-        <h1>What is Data Docs</h1>
+        <h1>What is Data Docs?</h1>
+
+        <iframe width="800" height="450" src="knight_demo/examples/input_text/dd_input_text.html" frameborder="0" allowfullScreen></iframe>
+
+        </br>
+        </br>
 
         <p>Data docs is a video platform that allows filmmakers and journalist to combine elements from the web, such as interactive graphics, text and scraped information, with linear media, such as video and audio.</p>
 
@@ -53,9 +53,11 @@
         <p><i>An illustration how the Data Docs platform works.</i></p>
 
         
-        <h2>The prototype</h2>
+        <h2>Sample story: The Jobs Report</h2>
 
-        <p>We made this prototype for you to understand exactly what can be done with Data Docs.</p>
+        <p>Every first Friday of the month, newspapers across the U.S. report these two numbers: the number of jobs added to the economy in the past month and the unemployment rate. "We added 120,000 jobs last month!," a headline might proclaim. "Unemployment rate is at 7.2%!," another outlet might print. We take these kinds of headlines for granted, but they are almost meaningless without context. </p>
+
+        <p>What do we need to know to truly understand them? The sample data story below explains the government's jobs report to you:</p>
 
         <iframe width="800" height="500" src="http://datadocs.org/prototype/embed.html" frameborder="0" allowfullScreen></iframe>
 
@@ -64,32 +66,21 @@
         <p>The prototype displays multiple features of Data Docs.</p>
 
         <ol>
-            <li>Customized text displayed on top of video (time code: 0:00)
+            <li><b>Customized lower thirds/chyrons</b>: We used data docs to display expert names and their titles on top of video (time code: starting at 0:00 but used throughout the video). This allows you do make text changes on the separate from the video, allowing you to change information without having to re-export the video file. 
                 </br><i></i>
             </li>
-            <li>Data from an API displayed as text on screen (time code: 0:44)</li>
-            <li>An interactive chart drawn from an API (time code: 2:23)</li>
+            <li><b>Customized text on screen</b>: To keep with the look-and-feel of the animation we made an alphabet that mimicks the twitchy, black-and-white and hand-drawn of the entire piece. This allows the text that we're changing to integrate seemlessly into the video and avoids interrupting the viewer's experience of the video (see an example at time code: 0:44).</li>
+            <li>Interactive components on your video: We drew an interactive chart on top of the video and displayed the chart when it was relevant to the story told in the video. The chart is drawn from a data feed on the web &mdash; for coders: it's drawn from an API &mdash; and is hence always up-to-date (time code: 2:23)</li>
         </ol>
 
-        <p>Below you will find step-by-step instructions that help you integrate different features into your video. </p>
+        <p>Below you will find step-by-step instructions that help you integrate different features into your video. If you're a filmmaker interested in using these libraries, we highly recommend you pair up with a developer.</p>
         </div>
 
-
-      <!--   <h2>Why use data docs:</h2>
-        <p>We created Data Docs because we wanted to bring together the power of interactivity and the immersiveness of video and audio.</p>
-
-        <p>Data Docs is a code library that allows you to:</p>
-        <li>annotate videos with text</li>
-        <li>add data from APIs to your videos in form of text or interactive charts</li>
-        <li>embed your interactive video</li>
-        </div> -->
-        
-        <!-- About section end -->
 
         <div id="how">
         <h2>How To Get Started</h2>
         
-        <p>If you're new to working with code on github, the simplest way to get started is to use the "Download Zip" button at the lower right of the datadocs/datadocs repo page to download all the code to your computer. Once you've unzipped the package, you'll have all the same files and folders that you can see online.</p>
+        <p>If you're new to working with code on github, the simplest way to get started is to use the "<a href="https://github.com/datadocs/datadocs/archive/master.zip">Download Zip</a>" button at the lower right of the <a href="https://github.com/datadocs/datadocs">datadocs/datadocs repo</a> page to download all the code to your computer. Once you've unzipped the package, you'll have all the same files and folders that you can see online.</p>
 
         <p>To get a sense for what DataDocs can do, we recommend that you actually skip the main index.html file in the main folder, and instead navigate down into the examples folders. Each of these folders is named after the DataDocs feature it demonstrates, and looking at the index.html file in each of these folders will give you a good sense of what the DataDocs platform can do - from adding simple text overlays to your video all the way up to loading dynamic data and interactive charts. Though each of these examples only shows one feature in action at a time, they can, of course, all be combined into a single DataDoc and used multiple times in a single video.</p>
 
